@@ -1,5 +1,5 @@
 name: Hello world
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy the App
-        run: echo "Deployin the app"
+        run: echo "Deploying the app"
       
         
         
