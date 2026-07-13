@@ -21,6 +21,8 @@ jobs:
    steps:
      - name: Deploy the app
        run: echo "Deployin the app to  ${{inputs.environment}} and tag is ${{inputs.artifact_tag}}"
+     - name: Print all variables
+       run: echo "${{toJson(github)}}"
 
      
      
