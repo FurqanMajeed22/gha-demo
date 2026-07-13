@@ -6,6 +6,11 @@ on:
         description: "Deployment environment"
         required: true
         default: "dev"
+        type: choice
+        options:
+          - dev
+          - prd
+          - qa
       artifact_tag:
         description: "Choose tag to deploy"
         required: true
