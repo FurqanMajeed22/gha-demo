@@ -5,4 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello step
-        run: echo "Welcome to github actions"
+        run: |
+          echo "Welcome to github actions"
+          echo "Hey Furqan"
+        
+        
+        
