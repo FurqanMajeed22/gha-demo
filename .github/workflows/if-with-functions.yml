@@ -19,7 +19,7 @@ jobs:
             - name: Deploying the code to dev_env
               run: echo "Performing quality checks on the code"
     prd_deploy:
-        if: github.ref_name=='prd' && github.event_name=='push'
+        if: github.ref_name=='main' && github.event_name=='push'
         runs-on: ubuntu-latest
         steps:
             - name: Deploying the code to prd_env
