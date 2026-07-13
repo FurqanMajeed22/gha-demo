@@ -6,12 +6,16 @@ on:
         description: "Deployment environment"
         required: true
         default: "dev"
+      artifact_tag:
+        description: "Choose tag to deploy"
+        required: true
+        
 jobs:
  input-demo:
    runs-on: ubuntu-latest
    steps:
      - name: Deploy the app
-       run: echo "Deployin the app to ${{inputs.environment}}"
+       run: echo "Deployin the app to  ${{inputs.environment}} and tag is ${{inputs.artifact_tag}}"
 
      
      
